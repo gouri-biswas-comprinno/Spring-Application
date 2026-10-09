@@ -13,7 +13,9 @@ public class App
     {
         //This line creates the container
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-//        Dev obj = (Dev) context.getBean("dev");
+        Dev obj = (Dev) context.getBean("dev");
+        obj.setAge(23);
+        System.out.println(obj.getAge());
 //        obj.build();
     }
 }
