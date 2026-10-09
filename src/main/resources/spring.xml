@@ -8,7 +8,9 @@
     <!-- bean definitions here -->
 
    <bean id = "dev" class="com.telusko.Dev">
-       <property name="age" value="24" />
+<!--       <property name="age" value="24" />-->
+       <constructor-arg value="40" />
+
    </bean>
 
     <bean id = "dev1" class="com.telusko.Dev">

@@ -13,11 +13,17 @@ public class Dev {
         this.age = age;
     }
 
-    private int age;
-
     public Dev() {
         System.out.println("dev constructor");
     }
+
+    public Dev(int age) {
+        this.age = age;
+        System.out.println("Dev 1 Constructor");
+    }
+
+    private int age;
+
 
 
     public void build() {
