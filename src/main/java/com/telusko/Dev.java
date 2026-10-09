@@ -2,7 +2,18 @@ package com.telusko;
 
 public class Dev {
 
-//    private Laptop laptop;
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
+    //reference variable, class reference
+    private Laptop laptop;
+
+    private int age;
 
 
     public int getAge() {
@@ -17,18 +28,16 @@ public class Dev {
         System.out.println("dev constructor");
     }
 
-    public Dev(int age) {
-        this.age = age;
+    public Dev(Laptop laptop) {
+        this.laptop = laptop;
         System.out.println("Dev 1 Constructor");
     }
-
-    private int age;
 
 
 
     public void build() {
 
         System.out.println("working on a project");
-//        laptop.compile();
+        laptop.compile();
     }
 }
